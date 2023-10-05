@@ -1,0 +1,18 @@
+<!-- views/films.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Film</title>
+</head>
+<body>
+    <h1>Data Film</h1>
+    <ul>
+        <% films.forEach(film => { %>
+            <li><%= film.title %> (Kategori: <%= film.categoryId %>)</li>
+        <% }); %>
+    </ul>
+</body>
+</html>
