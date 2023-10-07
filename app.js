@@ -91,3 +91,8 @@ app.get('/actors', async (req, res) => {
     }
   });
   
+
+  const apiRouter = require('./api');
+
+  app.use('/api', apiRouter);
+  
